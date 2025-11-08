@@ -28,9 +28,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Environment:**
  - OS: [e.g. Fedora 42]
- - Version: [e.g. 1.0.0]
- - Browser: [e.g. firefox, chrome]
- - Container runtime: [e.g. podman 4.9.4]
+ - Fedora Version: [e.g. 42, 43]
 
 **Additional context**
 Add any other context about the problem here.

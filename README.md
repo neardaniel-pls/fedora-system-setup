@@ -1,25 +1,26 @@
 # Fedora System Setup Scripts
 
-A collection of setup guides and administration tools for Fedora Linux systems.
+A setup guide for Fedora Linux systems.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Fedora Version](https://img.shields.io/badge/Fedora-42%2B-blue.svg)](https://getfedora.org/)
 
 ## Overview
 
-This repository contains comprehensive guides for setting up and maintaining Fedora systems, including system updates, repository management, multimedia support, and desktop customization.
+This repository contains a comprehensive post-installation guide for setting up Fedora 42 and later versions with essential configurations, repositories, drivers, and applications.
 
 ## Contents
 
+The current guide covers:
 - **System Updates**: Package management, firmware updates, and system maintenance
 - **Repository Management**: RPM Fusion, Flatpak, and third-party repositories  
 - **Multimedia Support**: FFmpeg, codecs, and hardware acceleration
-- **Desktop Environment**: GNOME extensions, tweaks, and customization
-- **System Administration**: Security hardening, performance optimization, and troubleshooting
+- **GNOME Extensions & Tweaks**: Essential extensions and system customization
+- **System Customization**: Display, sound, power, and appearance settings
 
 ## Getting Started
 
-Go to the [setup](setup/) directory and read the guide you want to follow. Each guide contains step-by-step instructions for setting up.
+Go to the [setup](setup/) directory and read the [Fedora Initial Setup Guide](setup/fedora_initial_setup.md) for step-by-step instructions.
 
 If you prefer to work locally, you can clone the repository:
 ```bash
@@ -29,11 +30,22 @@ cd fedora-system-setup
 
 ## Contributing
 
-Contributions are welcome! Please focus on:
+Contributions are welcome! This project is currently focused on expanding the available guides. Areas of interest include:
+- Additional setup guides for specific use cases
 - System administration tasks
 - Fedora-specific optimizations
 - Security improvements
-- Documentation updates
+- Performance tuning
+- Troubleshooting guides
+
+## Future Plans
+
+We plan to expand this repository with additional guides covering:
+- Advanced system administration
+- Security hardening
+- Performance optimization
+- Server-specific configurations
+- Development environment setup
 
 ## Support
 
