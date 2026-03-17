@@ -58,6 +58,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Note**: This is a companion repository to [fedora-user-scripts](https://github.com/neardaniel-pls/fedora-user-scripts) which contains practical utility scripts for daily use.
+## Related Projects
 
-**Note**: For a collection of guides for setting up AI on Fedora, see the companion [fedora-ai-setup](https://github.com/neardaniel-pls/fedora-ai-setup) repository.
+Check out these other companion projects:
+
+- **[fedora-user-scripts](https://github.com/neardaniel-pls/fedora-user-scripts)**: Collection of utility scripts optimized for Fedora Linux systems, focusing on system maintenance, security, and file management
+
+- **[fedora-ai-setup](https://github.com/neardaniel-pls/fedora-ai-setup)**: Collection of guides for setting up AI, machine learning, and LLM tools on Fedora Linux systems
+
+- **[near-whisper](https://github.com/neardaniel-pls/near-whisper)**: Free and open source GUI for local Whisper audio transcription on Fedora Linux systems
