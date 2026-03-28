@@ -13,9 +13,10 @@ This repository contains a comprehensive post-installation guide for setting up 
 
 The current guide covers:
 - **System Updates**: Package management, firmware updates, and system maintenance
-- **Repository Management**: RPM Fusion, Flatpak, and third-party repositories  
-- **Multimedia Support**: FFmpeg, codecs, and hardware acceleration
-- **GNOME Extensions & Tweaks**: Essential extensions and system customization
+- **Flatpak Support**: Flathub repository and Flatpak application management
+- **Third-Party Repositories**: RPM Fusion (free and non-free) for additional software
+- **Multimedia Support**: FFmpeg, codecs, and hardware video acceleration
+- **GNOME Extensions & Tweaks**: Extension Manager and essential extensions
 - **System Customization**: Display, sound, power, and appearance settings
 
 ## Getting Started

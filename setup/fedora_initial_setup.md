@@ -111,10 +111,10 @@ sudo dnf install gnome-tweaks
 
 ### Install Extension Manager
 
-The Extension Manager eliminates headaches associated with GNOME extensions. Install from GNOME Software or:
+Extension Manager provides an easy-to-use GUI for browsing, installing, and managing GNOME extensions. Install from GNOME Software or:
 
 ```bash
-flatpak install org.gnome.Extensions
+flatpak install flathub com.mattjakeman.ExtensionManager
 ```
 
 ### Recommended GNOME Extensions
@@ -124,8 +124,7 @@ Install these extensions via Extension Manager or the GNOME Extensions website:
 #### Essential Extensions
 
 - **Dash to Dock** - Persistent dock on your desktop with customizable appearance and behavior
-- **App Indicator Support** - Enables system tray icon support
-- **Appindicator and Kstatusnotifieritem Support** - Better compatibility for application indicators
+- **AppIndicator and KStatusNotifierItem Support** - Enables system tray icon support for applications that use app indicators
 
 ---
 
@@ -178,6 +177,54 @@ Group related applications in your application menu for better organization:
 
 ---
 
+## Troubleshooting
+
+### Flatpak apps don't appear after installation
+
+Run `flatpak update` to refresh the app database, then log out and back in. If the issue persists, verify the Flathub remote is configured:
+
+```bash
+flatpak remotes
+```
+
+If Flathub is missing, re-add it using the command in the [Enable Flatpak Support](#enable-flatpak-support) section.
+
+### `fwupdmgr` shows no devices or updates
+
+Not all hardware supports firmware updates via LVFS. You can check which devices are supported:
+
+```bash
+fwupdmgr get-devices
+```
+
+If no devices with updatable firmware are listed, your hardware may not support LVFS firmware updates. This is not an error.
+
+### GNOME Extensions don't work after update
+
+GNOME extensions may break after a major GNOME version update. Check for extension updates in Extension Manager, or visit the [GNOME Extensions website](https://extensions.gnome.org/) for updated versions. Some extensions may need to be replaced if they are no longer maintained.
+
+### RPM Fusion packages not found after installation
+
+If `dnf` can't find packages from RPM Fusion, the repository metadata may not have loaded correctly. Try reinstalling the repositories and refreshing:
+
+```bash
+sudo dnf group upgrade core
+sudo dnf clean all
+sudo dnf makecache
+```
+
+### Hardware video acceleration not working
+
+Verify VA-API is available for your GPU:
+
+```bash
+ vainfo
+```
+
+If this returns an error, your GPU driver may not support VA-API, or you may need additional driver packages (e.g., `mesa-va-drivers` for AMD/Intel, or `libva-nvidia-driver` for NVIDIA).
+
+---
+
 ## Useful Resources
 
 - **Fedora Project**: https://fedoraproject.org/
@@ -185,5 +232,5 @@ Group related applications in your application menu for better organization:
 - **RPM Fusion**: https://rpmfusion.org/
 - **GNOME Extensions**: https://extensions.gnome.org/
 - **Learn Linux TV**: https://www.youtube.com/watch?v=GoCPO_If7kY
-- **Fedora 43 Post-Install Guide (GitHub)**: https://github.com/devangshekhawat/Fedora-43-Post-Install-Guide
+- **Fedora Post-Install Guide (GitHub)**: https://github.com/devangshekhawat/Fedora-Post-Install-Guide
 - **Fedora 42 Post-Install (YouTube)**: https://www.youtube.com/watch?v=nXUbnfMz65w
