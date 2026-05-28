@@ -29,6 +29,26 @@ git clone https://github.com/neardaniel-pls/fedora-system-setup.git
 cd fedora-system-setup
 ```
 
+## Documentation
+
+### [Documentation Hub](docs/README.md)
+Guides and references
+
+### [Quick Start Guide](docs/QUICK_START.md)
+Set up Fedora in 15 minutes
+
+### [Guides](docs/guides/)
+- [Fedora Setup Guide](docs/guides/fedora-setup-guide.md) — Quick reference
+
+### [FAQ](docs/FAQ.md)
+Common questions and troubleshooting
+
+### [Contributing Guide](CONTRIBUTING.md)
+How to contribute
+
+### [Changelog](CHANGELOG.md)
+History of changes
+
 ## Contributing
 
 Contributions are welcome! This project is currently focused on expanding the available guides. Areas of interest include:
