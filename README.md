@@ -13,9 +13,10 @@ This repository contains a comprehensive post-installation guide for setting up 
 
 The current guide covers:
 - **System Updates**: Package management, firmware updates, and system maintenance
-- **Repository Management**: RPM Fusion, Flatpak, and third-party repositories  
-- **Multimedia Support**: FFmpeg, codecs, and hardware acceleration
-- **GNOME Extensions & Tweaks**: Essential extensions and system customization
+- **Flatpak Support**: Flathub repository and Flatpak application management
+- **Third-Party Repositories**: RPM Fusion (free and non-free) for additional software
+- **Multimedia Support**: FFmpeg, codecs, and hardware video acceleration
+- **GNOME Extensions & Tweaks**: Extension Manager and essential extensions
 - **System Customization**: Display, sound, power, and appearance settings
 
 ## Getting Started
@@ -27,6 +28,26 @@ If you prefer to work locally, you can clone the repository:
 git clone https://github.com/neardaniel-pls/fedora-system-setup.git
 cd fedora-system-setup
 ```
+
+## Documentation
+
+### [Documentation Hub](docs/README.md)
+Guides and references
+
+### [Quick Start Guide](docs/QUICK_START.md)
+Set up Fedora in 15 minutes
+
+### [Guides](docs/guides/)
+- [Fedora Setup Guide](docs/guides/fedora-setup-guide.md) — Quick reference
+
+### [FAQ](docs/FAQ.md)
+Common questions and troubleshooting
+
+### [Contributing Guide](CONTRIBUTING.md)
+How to contribute
+
+### [Changelog](CHANGELOG.md)
+History of changes
 
 ## Contributing
 

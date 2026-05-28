@@ -27,8 +27,9 @@ A clear and concise description of what actually happened.
 If applicable, add screenshots to help explain your problem.
 
 **Environment:**
- - OS: [e.g. Fedora 42]
  - Fedora Version: [e.g. 42, 43]
+ - Desktop Environment: [e.g. GNOME 46, KDE 6]
+ - Variant: [e.g. Workstation, Silverblue, Kinoite]
 
 **Additional context**
 Add any other context about the problem here.
