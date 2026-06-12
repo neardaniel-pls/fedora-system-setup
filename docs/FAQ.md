@@ -3,7 +3,7 @@
 ## General
 
 ### Which Fedora versions are supported?
-The guide is tested on Fedora 42+. Most steps work on earlier versions too, but package names or commands may differ.
+The guide is tested on Fedora 44+. Most steps work on earlier versions too, but package names or commands may differ.
 
 ### Can I use this on other distributions?
 The guide is Fedora-specific (uses `dnf`, `rpm`, etc.). The concepts apply to other distros, but commands will differ.
@@ -47,9 +47,9 @@ flatpak install flathub com.mattjakeman.ExtensionManager
 ## Troubleshooting
 
 ### DNF is slow
-Try enabling fastest mirror:
+Fedora 44 uses DNF5 by default. Try adjusting the download speed:
 ```bash
-echo 'fastestmirror=1' | sudo tee -a /etc/dnf/dnf.conf
+echo 'max_parallel_downloads=10' | sudo tee -a /etc/dnf/dnf.conf
 ```
 
 ### RPM Fusion installation failed
@@ -60,4 +60,4 @@ sudo dnf update -y
 
 ---
 
-**Last Updated**: 2026-05-25
+**Last Updated**: 2026-06-12

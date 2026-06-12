@@ -28,7 +28,7 @@ If applicable, add screenshots to help explain your problem.
 
 **Environment:**
  - Fedora Version: [e.g. 42, 43]
- - Desktop Environment: [e.g. GNOME 46, KDE 6]
+ - Desktop Environment: [e.g. GNOME 50, KDE Plasma 6.6]
  - Variant: [e.g. Workstation, Silverblue, Kinoite]
 
 **Additional context**

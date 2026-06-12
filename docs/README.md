@@ -4,7 +4,7 @@ Welcome to the Fedora System Setup documentation.
 
 ## Guides
 
-- **[Fedora Setup Guide](guides/fedora-setup-guide.md)** — Post-installation setup reference
+- **[Fedora Setup Guide](../setup/fedora_initial_setup.md)** — Post-installation setup with quick commands and detailed steps
 
 ## Quick Start
 
@@ -15,7 +15,7 @@ Welcome to the Fedora System Setup documentation.
 
 ## Navigation
 
-- **Setup**: [Fedora Setup Guide](guides/fedora-setup-guide.md)
+- **Setup**: [Fedora Setup Guide](../setup/fedora_initial_setup.md)
 - **Troubleshooting**: [FAQ](FAQ.md)
 - **Contributing**: [Contributing Guide](../CONTRIBUTING.md)
 
