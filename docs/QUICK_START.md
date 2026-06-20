@@ -4,7 +4,7 @@ Get your Fedora system set up in 15 minutes.
 
 ## Prerequisites
 
-- Fedora 42+ freshly installed
+- Fedora 44+ freshly installed
 - Internet connection
 - sudo access
 
@@ -30,9 +30,8 @@ The guide is organized by priority:
 
 ## Next Steps
 
-- [Fedora Setup Guide](guides/fedora-setup-guide.md) — Quick reference
 - [FAQ](FAQ.md) — Common questions
 
 ---
 
-**Last Updated**: 2026-05-25
+**Last Updated**: 2026-06-12

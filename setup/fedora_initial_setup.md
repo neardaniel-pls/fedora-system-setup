@@ -1,6 +1,28 @@
-# Fedora 42+ Initial Setup Guide
+# Fedora 44+ Initial Setup Guide
 
-A comprehensive post-installation guide for setting up Fedora 42 and later versions with all essential configurations, repositories, drivers, and applications.
+A comprehensive post-installation guide for setting up Fedora 44 and later versions with all essential configurations, repositories, drivers, and applications.
+
+---
+
+## Quick Commands
+
+For users who already know what they need, here are all the key commands in one place. See the sections below for detailed explanations.
+
+```bash
+sudo dnf upgrade -y
+
+sudo dnf install -y \
+  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+sudo dnf groupupdate core
+sudo dnf groupupdate multimedia
+sudo dnf groupupdate sound-and-video
+sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
+sudo dnf install libavcodec-freeworld
+```
 
 ---
 
@@ -60,13 +82,12 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 RPM Fusion provides access to additional software that Fedora doesn't include by default, including Steam, Discord, and multimedia codecs.
 
 ```bash
-sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 ```
 
 ### Install app-stream metadata
 ```bash
-sudo dnf group upgrade core
-sudo dnf group install core
+sudo dnf groupupdate core
 ```
 
 ### Update System and Reboot
@@ -86,6 +107,8 @@ sudo dnf swap 'ffmpeg-free' 'ffmpeg' --allowerasing
 
 ### Install Media Codecs
 ```bash
+sudo dnf groupupdate multimedia
+sudo dnf groupupdate sound-and-video
 sudo dnf install libavcodec-freeworld
 ```
 
@@ -208,7 +231,7 @@ GNOME extensions may break after a major GNOME version update. Check for extensi
 If `dnf` can't find packages from RPM Fusion, the repository metadata may not have loaded correctly. Try reinstalling the repositories and refreshing:
 
 ```bash
-sudo dnf group upgrade core
+sudo dnf groupupdate core
 sudo dnf clean all
 sudo dnf makecache
 ```

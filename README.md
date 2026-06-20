@@ -3,11 +3,11 @@
 A setup guide for Fedora Linux systems.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Fedora Version](https://img.shields.io/badge/Fedora-42%2B-blue.svg)](https://getfedora.org/)
+[![Fedora Version](https://img.shields.io/badge/Fedora-44%2B-blue.svg)](https://getfedora.org/)
 
 ## Overview
 
-This repository contains a comprehensive post-installation guide for setting up Fedora 42 and later versions with essential configurations, repositories, drivers, and applications.
+This repository contains a comprehensive post-installation guide for setting up Fedora 44 and later versions with essential configurations, repositories, drivers, and applications.
 
 ## Contents
 
@@ -36,9 +36,6 @@ Guides and references
 
 ### [Quick Start Guide](docs/QUICK_START.md)
 Set up Fedora in 15 minutes
-
-### [Guides](docs/guides/)
-- [Fedora Setup Guide](docs/guides/fedora-setup-guide.md) — Quick reference
 
 ### [FAQ](docs/FAQ.md)
 Common questions and troubleshooting
